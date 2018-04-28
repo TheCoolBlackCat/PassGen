@@ -45,8 +45,8 @@ int main () {
 	for (int i = 0; i < length; i++) {
 		PICK: switch (rand() % 4) { // Random number 0 - 1
 			case 0:
-			if (inc[0]) password[i] = upperCase();
-			else goto PICK;
+				if (inc[0]) password[i] = upperCase();
+				else goto PICK;
 				break;
 			case 1:
 				if (inc[0]) password[i] = lowerCase();
